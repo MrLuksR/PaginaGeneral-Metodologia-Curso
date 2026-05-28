@@ -10,21 +10,31 @@ function mostSec(id){
         setSection("unidades", 'none');
         setSection("recursos", 'none');
         setSection("normas", 'none');
+        setSection("evaluacion", 'none')
     }else if (id == "unidades"){
         setSection("inicio", 'none');
         setSection("unidades", 'block');
         setSection("recursos", 'none');
         setSection("normas", 'none');
+        setSection("evaluacion", 'none')
     }else if (id == "recursos"){
         setSection("inicio", 'none');
         setSection("unidades", 'none');
         setSection("recursos", 'block');
         setSection("normas", 'none');
+        setSection("evaluacion", 'none')
+    }else if (id == "evaluacion"){
+        setSection("inicio", 'none');
+        setSection("unidades", 'none');
+        setSection("recursos", 'none');
+        setSection("normas", 'none');
+        setSection("evaluacion", 'block')
     }else if (id == "normas"){
         setSection("inicio", 'none');
         setSection("unidades", 'none');
         setSection("recursos", 'none');
         setSection("normas", 'block');
+        setSection("evaluacion", 'none')
     }
 }
 
