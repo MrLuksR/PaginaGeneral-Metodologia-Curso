@@ -9,263 +9,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            background: #f4f7fb;
-            color: #1f2937;
-        }
-
-        /* HEADER */
-
-        header {
-            background: white;
-            padding: 50px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .header-text {
-            flex: 1;
-        }
-
-        .header-text h2 {
-            color: #1d4ed8;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .header-text h1 {
-            font-size: 4rem;
-            line-height: 1;
-            margin-bottom: 15px;
-            font-weight: 900;
-        }
-
-        .header-text h1 span {
-            color: #14b8a6;
-        }
-
-        .header-text p {
-            font-size: 1.2rem;
-            max-width: 650px;
-        }
-
-        .header-icons {
-            display: flex;
-            gap: 20px;
-            font-size: 4rem;
-            color: #7c3aed;
-        }
-
-        /* NAV */
-
-        .menu {
-            background: linear-gradient(90deg, #2563eb, #7c3aed);
-            padding: 18px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            background: rgba(255, 255, 255, .15);
-            padding: 12px 20px;
-            border-radius: 12px;
-            transition: .3s;
-        }
-
-        .menu a:hover {
-            background: rgba(255, 255, 255, .3);
-            transform: translateY(-2px);
-        }
-
-        /* SECTIONS */
-
-        section {
-            padding: 50px 8%;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #1d4ed8;
-        }
-
-        /* CARDS */
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
-            border-top: 6px solid #2563eb;
-            transition: .3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card i {
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-            color: #14b8a6;
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            color: #1d4ed8;
-        }
-
-        /* UNITS */
-
-        .units {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .unit {
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-            border-left: 8px solid #14b8a6;
-        }
-
-        .unit h3 {
-            margin-bottom: 10px;
-        }
-
-        /* RESOURCES */
-
-        .resources {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 20px;
-        }
-
-        .resource {
-            background: white;
-            padding: 25px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-            border: none;
-            cursor: pointer;
-            transition: .3s;
-        }
-
-        .resource:hover {
-            transform: translateY(-5px) scale(1.03);
-            background: #eef4ff;
-        }
-
-        .resource i {
-            font-size: 2.5rem;
-            color: #7c3aed;
-            margin-bottom: 10px;
-        }
-
-        .panel-recurso {
-            margin-top: 30px;
-            background: white;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-            animation: fade .3s ease;
-        }
-
-        .panel-recurso h3 {
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-
-        /* RULES */
-
-        .rules {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
-        }
-
-        .rules ul {
-            padding-left: 20px;
-            line-height: 2;
-        }
-
-        /* FOOTER */
-
-        footer {
-            background: linear-gradient(90deg, #2563eb, #14b8a6);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            margin-top: 40px;
-        }
-
-        footer h2 {
-            margin-bottom: 10px;
-        }
-
-        /* ANIMATION */
-
-        @keyframes fade {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* RESPONSIVE */
-
-        @media(max-width:768px) {
-
-            header {
-                text-align: center;
-            }
-
-            .header-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .header-icons {
-                justify-content: center;
-                width: 100%;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -302,10 +46,10 @@
 
     <nav class="menu">
 
-        <a href="#inicio">Inicio</a>
-        <a href="#unidades">Unidades</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#normas">Normas</a>
+        <a href="#inicio" onclick="mostSec('inicio');">Inicio</a>
+        <a href="#unidades" onclick="mostSec('unidades');">Unidades</a>
+        <a href="#recursos" onclick="mostSec('recursos');">Recursos</a>
+        <a href="#normas" onclick="mostSec('normas');">Normas</a>
 
     </nav>
 
@@ -381,7 +125,7 @@
 
             <div class="unit">
 
-                <h3>🟢 Unidad 1: Ciudadanía Digital</h3>
+                <h3>🟢 Unidad 1: Ciudadanía Digital (Semana 1)</h3>
 
                 <p>
                     Huella digital, privacidad y protección de datos.
@@ -391,7 +135,7 @@
 
             <div class="unit">
 
-                <h3>🔵 Unidad 2: Datos y Bases de Datos</h3>
+                <h3>🔵 Unidad 2: Datos y Bases de Datos (Semana 2)</h3>
 
                 <p>
                     Concepto de dato, información y bases de datos.
@@ -401,7 +145,7 @@
 
             <div class="unit">
 
-                <h3>🟡 Unidad 3: Organización de Información</h3>
+                <h3>🟡 Unidad 3: Organización de Información (Semana 3)</h3>
 
                 <p>
                     Tablas, registros y representación visual de datos.
@@ -411,7 +155,7 @@
 
             <div class="unit">
 
-                <h3>🟣 Unidad 4: Proyecto Final</h3>
+                <h3>🟣 Unidad 4: Proyecto Final (Semana 4)</h3>
 
                 <p>
                     Creación de una base de datos ficticia y reflexión digital.
@@ -427,7 +171,7 @@
 
     <section id="recursos">
 
-        <h2 class="section-title">🛠️ Recursos</h2>
+        <h2 class="section-title">🛠️ Recursos de Apoyo</h2>
 
         <div class="resources">
 
@@ -518,54 +262,7 @@
 
     </footer>
 
-    <!-- SCRIPT -->
-
-    <script>
-
-        function mostrarRecurso(tipo) {
-
-            const titulo = document.getElementById("titulo-recurso");
-            const contenido = document.getElementById("contenido-recurso");
-
-            if (tipo === "videos") {
-
-                titulo.innerHTML = "🎥 Videos Educativos";
-
-                contenido.innerHTML =
-                    "Aquí encontrarás videos relacionados con ciudadanía digital y bases de datos.";
-
-            }
-
-            else if (tipo === "lecturas") {
-
-                titulo.innerHTML = "📄 Lecturas";
-
-                contenido.innerHTML =
-                    "Materiales teóricos y presentaciones para complementar el aprendizaje.";
-
-            }
-
-            else if (tipo === "infografias") {
-
-                titulo.innerHTML = "📊 Infografías";
-
-                contenido.innerHTML =
-                    "Recursos visuales para comprender conceptos importantes del curso.";
-
-            }
-
-            else if (tipo === "cuestionarios") {
-
-                titulo.innerHTML = "📝 Cuestionarios";
-
-                contenido.innerHTML =
-                    "Actividades interactivas para evaluar lo aprendido en cada unidad.";
-
-            }
-
-        }
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
