@@ -47,11 +47,37 @@ function mostrarRecurso(tipo) {
 
     if (tipo === "videos") {
 
-        titulo.innerHTML = "🎥 Videos Educativos";
+        titulo.innerHTML = "🎥 Videos de Apoyo";
 
-        contenido.innerHTML =
-            "Aquí encontrarás videos relacionados con ciudadanía digital y bases de datos.";
+        contenido.innerHTML =`
 
+                <div class="videos-grid">
+
+                    <div class="video-card">
+
+                        <h3>¿Qué es la ciudadanía digital?</h3>
+
+                        <iframe
+                            src="https://www.youtube.com/embed/QAiN164WQ-o"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                    <div class="video-card">
+
+                        <h3>Privacidad en internet</h3>
+
+                        <iframe
+                            src="https://www.youtube.com/embed/6S8A-1jBD5Y"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            `;
     }
 
     else if (tipo === "lecturas") {
@@ -82,3 +108,5 @@ function mostrarRecurso(tipo) {
     }
 
 }
+
+/*Fundamenctación potenciada con el MCN*/
