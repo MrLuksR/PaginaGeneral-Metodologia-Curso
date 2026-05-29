@@ -86,7 +86,6 @@ function mostrarRecurso(tipo) {
 
         contenido.innerHTML =
             "Materiales teóricos y presentaciones para complementar el aprendizaje.";
-
     }
 
     else if (tipo === "infografias") {
@@ -94,7 +93,7 @@ function mostrarRecurso(tipo) {
         titulo.innerHTML = "📊 Infografías";
 
         contenido.innerHTML =
-            "Recursos visuales para comprender conceptos importantes del curso.";
+            "<iframe src='https://www.canva.com/design/DAHK_kZZ7hE/LTs6AA2ZuQT3Zw2txlocOw/view?embed' allowfullscreen></iframe>";
 
     }
 
