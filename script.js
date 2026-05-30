@@ -10,31 +10,43 @@ function mostSec(id){
         setSection("unidades", 'none');
         setSection("recursos", 'none');
         setSection("normas", 'none');
-        setSection("evaluacion", 'none')
+        setSection("evaluacion", 'none');
+        setSection("docentes", 'none');
     }else if (id == "unidades"){
         setSection("inicio", 'none');
         setSection("unidades", 'block');
         setSection("recursos", 'none');
         setSection("normas", 'none');
-        setSection("evaluacion", 'none')
+        setSection("evaluacion", 'none');
+        setSection("docentes", 'none');
     }else if (id == "recursos"){
         setSection("inicio", 'none');
         setSection("unidades", 'none');
         setSection("recursos", 'block');
         setSection("normas", 'none');
-        setSection("evaluacion", 'none')
+        setSection("evaluacion", 'none');
+        setSection("docentes", 'none');
     }else if (id == "evaluacion"){
         setSection("inicio", 'none');
         setSection("unidades", 'none');
         setSection("recursos", 'none');
         setSection("normas", 'none');
-        setSection("evaluacion", 'block')
+        setSection("evaluacion", 'block');
+        setSection("docentes", 'none');
     }else if (id == "normas"){
         setSection("inicio", 'none');
         setSection("unidades", 'none');
         setSection("recursos", 'none');
         setSection("normas", 'block');
-        setSection("evaluacion", 'none')
+        setSection("evaluacion", 'none');
+        setSection("docentes", 'none');
+    }else if (id == "docentes"){
+        setSection("inicio", 'none');
+        setSection("unidades", 'none');
+        setSection("recursos", 'none');
+        setSection("normas", 'none');
+        setSection("evaluacion", 'none');
+        setSection("docentes", 'block');
     }
 }
 
@@ -48,6 +60,7 @@ function mostrarRecurso(tipo) {
     if (tipo === "videos") {
 
         titulo.innerHTML = "🎥 Videos de Apoyo";
+        titulo.style.textAlign = "center";
 
         contenido.innerHTML =`
 
@@ -92,8 +105,16 @@ function mostrarRecurso(tipo) {
 
         titulo.innerHTML = "📊 Infografías";
 
-        contenido.innerHTML =
-            "<iframe src='https://www.canva.com/design/DAHK_kZZ7hE/LTs6AA2ZuQT3Zw2txlocOw/view?embed' allowfullscreen></iframe>";
+        contenido.innerHTML =`<div class="video-card">
+
+                        <h3>¿Qué es la huella digital?</h3>
+
+                        <iframe
+                            src="https://www.canva.com/design/DAHK_kZZ7hE/LTs6AA2ZuQT3Zw2txlocOw/view?embed"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>`;
 
     }
 

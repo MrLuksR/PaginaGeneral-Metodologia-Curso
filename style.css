@@ -129,6 +129,17 @@ section {
     color: #1d4ed8;
 }
 
+.card h4 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #1d4ed8;
+}
+
+.card ul{
+    padding: 0;        /* Elimina el margen interno */
+    margin-left: 30px;         /* Elimina el margen externo */
+}
+
 /* UNITS */
 
 .units {
