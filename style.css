@@ -136,8 +136,12 @@ section {
 }
 
 .card ul{
-    padding: 0;        /* Elimina el margen interno */
-    margin-left: 30px;         /* Elimina el margen externo */
+    margin-left: 30px;   /* Elimina el margen externo */
+}
+
+.card li{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* UNITS */
