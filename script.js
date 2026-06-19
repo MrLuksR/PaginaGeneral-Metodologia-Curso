@@ -97,8 +97,16 @@ function mostrarRecurso(tipo) {
 
         titulo.innerHTML = "📄 Lecturas";
 
-        contenido.innerHTML =
-            "Materiales teóricos y presentaciones para complementar el aprendizaje.";
+        contenido.innerHTML =`<div class="pdf-card">
+
+                        <h3>Lecturas recomendadas</h3>
+
+                        <iframe
+                            src="Documentos/Software_Libre.pdf"
+                            allowfullscreen>
+                        </iframe>
+
+                    </div>`;
     }
 
     else if (tipo === "infografias") {
